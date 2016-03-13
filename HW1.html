@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="time-countdown">
+<span id="num">60</span>
+<span id ="end"></span>
+<ul>
+  <li>
+  <li>
+  <li>
+  <li>
+  <li>
+</ul>
+</div>
+<input type="button" class="button" id="bot" value="Start" onclick="minus()" >
+<SCRIPT language="JavaScript">
+<!--
+function minus() {
+
+  document.getElementById("bot").style.visibility="hidden";
+
+  if (document.getElementById("num")) {
+    var curr = parseInt(document.getElementById("num").innerHTML);
+    document.getElementById("num").innerHTML="60"
+
+  }
+
+  if (curr && curr<= 60) {
+
+    if (curr <= 10) {
+      document.getElementById("num").innerHTML = "0" + (curr - 1);
+    } else {
+      document.getElementById("num").innerHTML = curr - 1;
+    }
+  } else {
+
+  	document.getElementById("num").innerHTML = "<br><br>Time's up";
+    document.getElementById("num").style.fontSize = 'xx-large';
+}
+
+
+  setTimeout(function() {
+    minus();
+  }, 1000);
+
+};
+//-->
+</SCRIPT>
+</body>
+</html>
